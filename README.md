@@ -33,3 +33,7 @@ npm run check
 npm run deploy
 ```
 위 규칙은 프로젝트의 안정성과 장기 유지보수를 위해 반드시 따라야 합니다.
+
+## 라이선스
+
+사이트 소스 코드는 [MIT License](LICENSE)를 따릅니다. 글과 이미지 등 콘텐츠는 MIT 라이선스에 포함되지 않으며, 저작권자의 허락 없이 사용할 수 없습니다([LICENSE-CONTENT](LICENSE-CONTENT)).
