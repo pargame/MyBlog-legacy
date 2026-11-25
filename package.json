@@ -2,15 +2,15 @@
   "name": "myblog",
   "version": "0.1.0",
   "private": true,
-  "description": "MyBlog - Vite + React + TypeScript site",
+  "description": "MyBlog (Legacy) - Vite + React + TypeScript site",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pargame/MyBlog.git"
+    "url": "https://github.com/pargame/MyBlog-legacy.git"
   },
   "scripts": {
     "dev": "vite",
   "check": "eslint \"src/**/*.{ts,tsx,js,jsx}\" --fix && prettier --write \"src/**/*.{ts,tsx,js,jsx,json,md,css}\" && npm audit --omit dev --audit-level=moderate && vite build && cp -R public/* dist/",
-    "deploy": "if command -v gh >/dev/null 2>&1; then gh workflow run deploy.yml --repo pargame/MyBlog --ref main && echo 'Dispatched deploy.yml via gh'; elif [ -n \"$GH_TOKEN\" ]; then curl -sSf -X POST -H \"Accept: application/vnd.github+json\" -H \"Authorization: token $GH_TOKEN\" https://api.github.com/repos/pargame/MyBlog/actions/workflows/deploy.yml/dispatches -d '{\"ref\":\"main\"}' && echo 'Dispatched deploy.yml via GH_TOKEN'; else echo 'gh CLI not available and GH_TOKEN not set. Install gh or set GH_TOKEN.'; exit 1; fi"
+    "deploy": "if command -v gh >/dev/null 2>&1; then gh workflow run deploy.yml --repo pargame/MyBlog-legacy --ref main && echo 'Dispatched deploy.yml via gh'; elif [ -n \"$GH_TOKEN\" ]; then curl -sSf -X POST -H \"Accept: application/vnd.github+json\" -H \"Authorization: token $GH_TOKEN\" https://api.github.com/repos/pargame/MyBlog-legacy/actions/workflows/deploy.yml/dispatches -d '{\"ref\":\"main\"}' && echo 'Dispatched deploy.yml via GH_TOKEN'; else echo 'gh CLI not available and GH_TOKEN not set. Install gh or set GH_TOKEN.'; exit 1; fi"
   },
   "lint-staged": {
     "src/**/*.{ts,tsx,js,jsx}": [
@@ -18,7 +18,7 @@
       "npx prettier --write"
     ]
   },
-  "homepage": "https://pargame.github.io/MyBlog/",
+  "homepage": "https://pargame.github.io/MyBlog-legacy/",
   "dependencies": {
     "@monaco-editor/react": "^4.7.0",
     "marked": "^16.2.1",

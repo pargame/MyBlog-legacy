@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MyBlog</title>
-  <link rel="icon" type="image/svg+xml" href="/MyBlog/favicon.svg">
+  <title>MyBlog (Legacy)</title>
+  <link rel="icon" type="image/svg+xml" href="/MyBlog-legacy/favicon.svg">
   <script>
     // Restore the path after 404 redirect
     (function () {
@@ -15,7 +15,7 @@
         if (match) {
           var redirect = decodeURIComponent(match[1]);
           // Clean up the URL without reloading
-          history.replaceState(null, '', '/MyBlog' + redirect);
+          history.replaceState(null, '', '/MyBlog-legacy' + redirect);
         }
       }
     })();

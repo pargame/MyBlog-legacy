@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// Base path assumes project pages: /MyBlog/
+// Base path assumes project pages: /MyBlog-legacy/
 export default defineConfig({
-  base: '/MyBlog/',
+  base: '/MyBlog-legacy/',
   plugins: [react()],
   server: {
     port: 5173

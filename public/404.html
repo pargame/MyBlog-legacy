@@ -7,9 +7,9 @@
     <script>
         // GitHub Pages SPA redirect hack
         // Encode the path as a query parameter
-        var path = location.pathname.replace(/^\/MyBlog/, '') + location.search + location.hash;
+        var path = location.pathname.replace(/^\/MyBlog-legacy/, '') + location.search + location.hash;
         var redirect = '/?redirect=' + encodeURIComponent(path);
-        location.replace(location.origin + '/MyBlog/' + redirect);
+        location.replace(location.origin + '/MyBlog-legacy/' + redirect);
     </script>
 </head>
 
